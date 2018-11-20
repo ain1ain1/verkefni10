@@ -86,7 +86,7 @@ function showQuestion() {
 function start() {
   correct = 0;
   total = 0;
-  score = 0;
+  points = 0;
   startButton.classList.add('button--hidden');
   problem.classList.remove('problem--hidden');
   tick(playTime);
@@ -140,12 +140,11 @@ export default function init(_playTime) {
   teljari = document.querySelector('.problem__timer');
   svar = document.querySelector('.problem__input');
   startButton = document.querySelector('.start');
-  stig.addEventListener('submit', onSubmitScore);
   svorin = document.querySelector('.problem__answer');
-  svorin.addEventListener('submit', onSubmit);
   birtaTexta = document.querySelector('.result__text');
   stig = document.querySelector('.result__form');
   resultInput = document.querySelector('.result__input');
-  startButton = document.querySelector('.start');
   startButton = document.addevenListener('click', start);
+  svorin.addEventListener('submit', onSubmit);
+  stig.addEventListener('submit', onSubmitScore);
 }
