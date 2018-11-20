@@ -1,4 +1,4 @@
-import Question from './question';
+ import Question from './question';
 import * as helper from './helpers';
 import Highscore, { score } from './highscore';
 import * as storage from './storage';
@@ -144,7 +144,7 @@ export default function init(_playTime) {
   birtaTexta = document.querySelector('.result__text');
   stig = document.querySelector('.result__form');
   resultInput = document.querySelector('.result__input');
-  startButton.document.addevenListener('click', start);
+  startButton.document.addEventListener('click', start);
   svorin.addEventListener('submit', onSubmit);
   stig.addEventListener('submit', onSubmitScore);
 }
