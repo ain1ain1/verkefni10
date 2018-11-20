@@ -144,7 +144,7 @@ export default function init(_playTime) {
   birtaTexta = document.querySelector('.result__text');
   stig = document.querySelector('.result__form');
   resultInput = document.querySelector('.result__input');
-  startButton = document.addevenListener('click', start);
+  startButton.document.addevenListener('click', start);
   svorin.addEventListener('submit', onSubmit);
   stig.addEventListener('submit', onSubmitScore);
 }
